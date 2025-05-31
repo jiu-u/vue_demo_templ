@@ -16,7 +16,8 @@ export default defineConfig(({ command, mode }) => {
 	const env = loadEnv(mode, process.cwd(), "")
 	// console.log(env)
 	return {
-		base: "./",
+		// base: "./", # 使用于webHash路由 /#/assets/*.css，如果使用webHistory路由，报错请求/current-path/assets/*.css
+		base: "/",
 		server: {
 			port: env.VITE_PORT,
 			host: true,
