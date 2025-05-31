@@ -1,5 +1,6 @@
 <script setup>
 definePage({
+	name: "404",
 	alias: "/404",
 })
 </script>

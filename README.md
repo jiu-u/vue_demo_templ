@@ -12,6 +12,7 @@
 - **Pinia 3**：Vue 官方推荐的状态管理库，配置了持久化插件
 - **Element Plus**：集成流行的 UI 组件库
 - **UnoCSS**：原子化 CSS 引擎，提供高效的样式开发体验
+- **Day.js**：轻量级的日期处理库，用于日期格式化和操作
 - **TypeScript 支持**：通过 JSConfig 提供类型提示
 - **自动导入**：组件和 API 的自动导入，减少重复代码
 - **代码规范**：集成 ESLint + Prettier + EditorConfig
@@ -112,6 +113,7 @@ bun run format      # 格式化代码
 - CSS 工具：配置了 UnoCSS 和 Sass
 - 状态持久化：Pinia 已配置持久化存储
 - 代理配置：已配置 API 代理，可在 vite.config.js 中修改
+- 日期处理：使用 Day.js 替代 Moment.js，提供轻量级日期操作功能
 
 ## 📚 相关文档
 
@@ -121,3 +123,4 @@ bun run format      # 格式化代码
 - [Pinia 文档](https://pinia.vuejs.org/)
 - [Element Plus 文档](https://element-plus.org/)
 - [UnoCSS 文档](https://unocss.dev/)
+- [Day.js 文档](https://day.js.org/)

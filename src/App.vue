@@ -1,43 +1,14 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue"
-
-const count = ref(0)
-const name = reactive({
-	first: "John",
-	last: "Doe",
-})
-onMounted(() => {
-	console.log(count.value)
-	console.log(name)
-})
+// Auto imports will be handled by plugins
 </script>
 
 <template>
-	<div>
-		<ul>
-			<li>
-				<RouterLink to="/">home</RouterLink>
-			</li>
-
-			<li>
-				<RouterLink to="/about">about</RouterLink>
-			</li>
-
-			<li>
-				<RouterLink to="/users">users</RouterLink>
-			</li>
-			<li>
-				<RouterLink to="/users/1">users/1</RouterLink>
-			</li>
-		</ul>
-		<HcButton />
-	</div>
-
-	<div class="flex-center bg-green-300 rounded-lg h-32 w-[120px]">
-		<HcButton>click me</HcButton>
-	</div>
-
-	<RouterView />
+	<AppLayout>
+		<RouterView />
+		<template #footer>
+			<AppFooter />
+		</template>
+	</AppLayout>
 </template>
 
 <style scoped>

@@ -18,7 +18,7 @@ export default defineConfig(({ command, mode }) => {
 	return {
 		base: "./",
 		server: {
-			port: env.VITE_PORT || 3005,
+			port: env.VITE_PORT,
 			host: true,
 			proxy: {
 				// 请求代理配置
